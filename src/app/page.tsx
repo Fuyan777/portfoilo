@@ -7,7 +7,7 @@ import ArticleList from "./components/Section/Article/ArticleList";
 import Profile from "./components/Section/Profile/Profile";
 import Contact from "./components/Section/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Hader";
+import Header from "./components/Header/Header";
 import KeyVisual from "./components/Section/KeyVisual/KeyVisual";
 
 export default function Home() {

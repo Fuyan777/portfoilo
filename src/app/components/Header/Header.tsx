@@ -1,8 +1,10 @@
 "use client";
 import styles from "./Header.module.css";
 import { useState } from "react";
+import nextConfig from "../../../../next.config.mjs";
 
 export default function Header() {
+  const BASE_PATH = nextConfig.basePath || "";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +17,7 @@ export default function Header() {
         <div className={styles.titleContainer}>
           <img
             className={styles.image}
-            src="/icon_menu.png"
+            src={`${BASE_PATH}/icon_menu.png`}
             width={20}
             height={18}
             onClick={toggleMenu}
