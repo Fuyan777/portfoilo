@@ -16,7 +16,7 @@ export default function ProductsList() {
 
       <div className={styles.workItemListContainer}>
         {worksItems.map((item) => (
-          <div className={styles.workItem}>
+          <div className={styles.workItem} key={item.title}>
             <Link href={"/"}>
               <img src="/sample.png" alt="alt" className={styles.image} />
             </Link>
