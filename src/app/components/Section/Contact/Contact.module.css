@@ -1,0 +1,57 @@
+.formContainer {
+  margin: 30px;
+}
+
+.formField {
+  padding-bottom: 16px;
+}
+
+.inputText {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #b5b5b5;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.inputText:focus {
+  border-bottom: 2px solid #da3c41;
+  outline: none;
+}
+
+.inputMessageText {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-width: 0 0 2px 0;
+  border-color: #b5b5b5;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.inputMessageText:focus {
+  border-bottom: 2px solid #da3c41;
+  outline: none;
+}
+
+.submitButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  background-color: #d9534f;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}

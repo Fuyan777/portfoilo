@@ -1,0 +1,20 @@
+.blur {
+  position: relative;
+  background-color: #464646;
+  opacity: 0.85;
+  height: 600px;
+}
+
+.title {
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-left: 16px;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  text-align: right;
+  padding-right: 16px;
+}

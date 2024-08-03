@@ -1,0 +1,30 @@
+.newsList {
+  list-style: none;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.newsItem {
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.newsContainer {
+  margin: 0px;
+}
+
+.date {
+  color: #999;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.title {
+  color: #333;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+}

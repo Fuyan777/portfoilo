@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage {
+  width: 100%;
+}
+
+.titleContainer {
+  margin: 30px;
+}
+
+.profileTitle {
+  font-size: 16pt;
+  margin: 0;
+}
+
+.profileSubtitle {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+  margin: 0;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.infoLabel {
+  width: 76px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.infoDivider {
+  padding-right: 8px;
+}
+
+.infoValue {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 4px;
+}

@@ -1,0 +1,26 @@
+.workItemListContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.workItem {
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background-color: rgb(140, 140, 140);
+}
+
+.image {
+  width: 340px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.label {
+  padding: 8px;
+  color: #ffffff;
+}

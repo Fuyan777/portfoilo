@@ -1,0 +1,44 @@
+.container {
+  margin-top: 30px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 8px;
+}
+
+.image {
+  position: absolute;
+  left: 16px;
+}
+
+.title {
+  margin: 0px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  position: absolute;
+  width: 50%;
+  top: 70px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+
+.menuItem {
+  padding: 12px;
+  text-decoration: none;
+  color: #d9534f;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
