@@ -21,12 +21,3 @@ export default function KeyVisual() {
     </main>
   );
 }
-
-{
-  /* <h2 className={styles.title}>FuyanTech</h2>
-          <h2 className={styles.name}>
-            Fuya
-            <br />
-            Yamada
-          </h2> */
-}
