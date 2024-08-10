@@ -5,9 +5,16 @@ import styles from "./ArticleList.module.css";
 import nextConfig from "../../../../../next.config.mjs";
 
 const worksItems = [
-  { date: "2024.6", title: "WEARリニューアルプロジェクト" },
-  { date: "2023.6", title: "WWDC現地参加" },
-  { date: "2023.5 - 2024.6", title: "WEARリニューアルプロジェクト2" },
+  {
+    title: "WEARリニューアル",
+    src: "newwear",
+    link: "https://techblog.zozo.com/entry/newwear-renewal-new-grad-ios-engineer-approach",
+  },
+  {
+    title: "WWDC現地参加",
+    src: "wwdc24",
+    link: "https://techblog.zozo.com/entry/wwdc24",
+  },
 ];
 
 export default function ArticleList() {
@@ -20,9 +27,9 @@ export default function ArticleList() {
       <div className={styles.workItemListContainer}>
         {worksItems.map((item) => (
           <div className={styles.workItem} key={item.title}>
-            <Link href={"/"}>
+            <Link href={item.link}>
               <img
-                src={`${BASE_PATH}/sample.png`}
+                src={`${BASE_PATH}/${item.src}.png`}
                 alt="alt"
                 className={styles.image}
               />

@@ -5,9 +5,16 @@ import styles from "./WorksList.module.css";
 import nextConfig from "../../../../../next.config.mjs";
 
 const worksItems = [
-  { date: "2024.6", title: "WEARリニューアルプロジェクト" },
-  { date: "2023.6", title: "WWDC現地参加" },
-  { date: "2023.5 - 2024.6", title: "WEARリニューアルプロジェクト2" },
+  {
+    title: "WEARリニューアルプロジェクト",
+    src: "newwear",
+    link: "https://corp.zozo.com/news/20240509-wear-renewal/",
+  },
+  {
+    title: "社内インタビュー",
+    src: "interview",
+    link: "https://www.wantedly.com/id/fuya_yamada/items/d1300e7e-e924-4845-8cce-b743bb6d266f",
+  },
 ];
 
 export default function WorksList() {
@@ -20,9 +27,9 @@ export default function WorksList() {
       <div className={styles.workItemListContainer}>
         {worksItems.map((item) => (
           <div className={styles.workItem} key={item.title}>
-            <Link href={"/"}>
+            <Link href={item.link}>
               <img
-                src={`${BASE_PATH}/sample.png`}
+                src={`${BASE_PATH}/work_${item.src}.png`}
                 alt="alt"
                 className={styles.image}
               />

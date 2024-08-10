@@ -4,11 +4,30 @@ import ViewAllButton from "../../ViewAllButton/ViewAllButton";
 import styles from "./ProductsList.module.css";
 import nextConfig from "../../../../../next.config.mjs";
 
-const worksItems = [
-  { date: "2024.6", title: "WEARリニューアルプロジェクト" },
-  { date: "2023.6", title: "WWDC現地参加" },
-  { date: "2023.5 - 2024.6", title: "WEARリニューアルプロジェクト2" },
+const prductItems = [
+  {
+    title: "アブローラーカウント",
+    src: "abs",
+    link: "https://apps.apple.com/jp/appid1587434824",
+  },
+  {
+    title: "DreamTracker",
+    src: "dt",
+    link: "https://apps.apple.com/jp/app/dreamtracker/id6479675478",
+  },
+  {
+    title: "日焼け止めタイマー",
+    src: "sun",
+    link: "https://apps.apple.com/jp/app/id6461166544",
+  },
+  {
+    title: "ポートフォリオ",
+    src: "portfolio",
+    link: "/",
+  },
 ];
+
+// https://apps.apple.com/jp/app/financequest/id6538724962
 
 export default function ProductsList() {
   const BASE_PATH = nextConfig.basePath || "";
@@ -18,11 +37,11 @@ export default function ProductsList() {
       <SectionHeader title={"Products"} />
 
       <div className={styles.workItemListContainer}>
-        {worksItems.map((item) => (
+        {prductItems.map((item) => (
           <div className={styles.workItem} key={item.title}>
-            <Link href={"/"}>
+            <Link href={item.link}>
               <img
-                src={`${BASE_PATH}/sample.png`}
+                src={`${BASE_PATH}/pd_${item.src}.png`}
                 alt="alt"
                 className={styles.image}
               />

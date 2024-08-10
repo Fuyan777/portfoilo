@@ -22,7 +22,7 @@ export default function Header() {
             height={18}
             onClick={toggleMenu}
           />
-          <p className={styles.title}>Fuya</p>
+          <p className={styles.title}>FuyanTech</p>
         </div>
         {isOpen && (
           <div className={styles.menu}>
