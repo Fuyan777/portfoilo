@@ -21,6 +21,10 @@ export default function Footer() {
         </a>
       </div>
 
+      <div className={styles.logoContainer}>
+        <img src={`${BASE_PATH}/logo_fuyantech.png`} width={140} />
+      </div>
+
       <div className={styles.bottomBackground} />
     </main>
   );
