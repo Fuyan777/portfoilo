@@ -7,7 +7,14 @@ export default function KeyVisual() {
   return (
     <main className="main">
       <div className={styles.videoContainer}>
-        <video className={styles.video} width="600" loop autoPlay muted>
+        <video
+          className={styles.video}
+          width="600"
+          loop
+          autoPlay
+          muted
+          playsInline
+        >
           <source src={`${BASE_PATH}/demo.mp4`} type="video/mp4" />
         </video>
         <div className={styles.overlay}>
