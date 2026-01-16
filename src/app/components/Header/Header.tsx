@@ -49,9 +49,6 @@ export default function Header() {
               <a href="#sns" className={styles.menuItem}>
                 SNS
               </a>
-              <a href="#contact" className={styles.menuItem}>
-                CONTACT
-              </a>
             </div>
           )}
         </div>

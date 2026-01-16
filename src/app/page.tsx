@@ -1,9 +1,7 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import ProductsList from "./components/Section/ProductsList/ProductsList";
 import Profile from "./components/Section/Profile/Profile";
 import SNSList from "./components/Section/SNSList/SNSList";
-import Contact from "./components/Section/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import KeyVisual from "./components/Section/KeyVisual/KeyVisual";
@@ -17,7 +15,6 @@ export default function Home() {
         <ProductsList />
         <Profile />
         <SNSList />
-        <Contact />
         <Footer />
       </div>
     </main>

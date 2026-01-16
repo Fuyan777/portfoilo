@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SectionHeader from "../../SectionHeader/SectionHeader";
-import ViewAllButton from "../../ViewAllButton/ViewAllButton";
 import styles from "./ProductsList.module.css";
 import nextConfig from "../../../../../next.config.mjs";
 
@@ -50,8 +49,6 @@ export default function ProductsList() {
           </div>
         ))}
       </div>
-
-      {/* <ViewAllButton /> */}
     </main>
   );
 }
