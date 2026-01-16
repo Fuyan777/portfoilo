@@ -2,6 +2,38 @@
   background-color: rgb(242, 242, 242);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* コンテンツコンテナの最大幅を設定 */
+main.main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* セクション共通のパディング */
+section {
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 60px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding: 80px 60px;
+  }
 }

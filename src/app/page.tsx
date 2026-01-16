@@ -1,10 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import NewsList from "./components/Section/NewsList/NewsList";
-import WorksList from "./components/Section/WorksList/WorksList";
 import ProductsList from "./components/Section/ProductsList/ProductsList";
-import ArticleList from "./components/Section/Article/ArticleList";
 import Profile from "./components/Section/Profile/Profile";
+import SNSList from "./components/Section/SNSList/SNSList";
 import Contact from "./components/Section/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -16,11 +14,9 @@ export default function Home() {
       <div>
         <Header />
         <KeyVisual />
-        <NewsList />
-        <WorksList />
         <ProductsList />
-        <ArticleList />
         <Profile />
+        <SNSList />
         <Contact />
         <Footer />
       </div>

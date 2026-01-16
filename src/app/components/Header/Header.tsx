@@ -1,11 +1,22 @@
 "use client";
 import styles from "./Header.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import nextConfig from "../../../../next.config.mjs";
 
 export default function Header() {
   const BASE_PATH = nextConfig.basePath || "";
   const [isOpen, setIsOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,36 +32,29 @@ export default function Header() {
             width={20}
             height={18}
             onClick={toggleMenu}
+            alt="Menu"
           />
           <p className={styles.title}>FuyanTech</p>
+          {(isDesktop || isOpen) && (
+            <div className={styles.menu}>
+              <a href="#" className={styles.menuItem}>
+                TOP
+              </a>
+              <a href="#product" className={styles.menuItem}>
+                PRODUCTS
+              </a>
+              <a href="#profile" className={styles.menuItem}>
+                PROFILE
+              </a>
+              <a href="#sns" className={styles.menuItem}>
+                SNS
+              </a>
+              <a href="#contact" className={styles.menuItem}>
+                CONTACT
+              </a>
+            </div>
+          )}
         </div>
-        {isOpen && (
-          <div className={styles.menu}>
-            <a href="#" className={styles.menuItem}>
-              TOP
-            </a>
-            <a href="#news" className={styles.menuItem}>
-              NEWS
-            </a>
-            <a href="#works" className={styles.menuItem}>
-              WORKS
-            </a>
-            <a href="#product" className={styles.menuItem}>
-              PRODUCTS
-            </a>
-            <a href="#article" className={styles.menuItem}>
-              ARTICLE&
-              <br />
-              SPEAKER
-            </a>
-            <a href="#profile" className={styles.menuItem}>
-              PROFILE
-            </a>
-            <a href="#contact" className={styles.menuItem}>
-              CONTACT
-            </a>
-          </div>
-        )}
       </div>
     </main>
   );

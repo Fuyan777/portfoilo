@@ -1,10 +1,43 @@
 .viewAll {
   text-align: right;
-  margin: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .viewAll a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.viewAll a:hover {
+  color: #d9534f;
+}
+
+.viewAll a::after {
+  content: " →";
+}
+
+@media (min-width: 768px) {
+  .viewAll {
+    padding: 20px 40px;
+  }
+
+  .viewAll a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .viewAll {
+    padding: 20px 60px;
+  }
+
+  .viewAll a {
+    font-size: 18px;
+  }
 }

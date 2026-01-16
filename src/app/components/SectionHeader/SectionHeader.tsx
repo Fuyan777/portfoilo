@@ -6,10 +6,10 @@ type SectionHeaderProps = {
 
 export default function SectionHeader({ title }: SectionHeaderProps) {
   return (
-    <main className="main">
+    <div className={styles.sectionHeader}>
       <div className={styles.header}>
         <h2>{title}</h2>
       </div>
-    </main>
+    </div>
   );
 }

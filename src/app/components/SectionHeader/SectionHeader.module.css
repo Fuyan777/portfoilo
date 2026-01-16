@@ -1,16 +1,68 @@
 .sectionHeader {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .header {
+  margin: 0;
+  position: relative;
+  display: inline-block;
 }
 
 .header h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", -apple-system, BlinkMacSystemFont, sans-serif;
   display: inline-block;
-  background-color: #d9534f;
-  color: white;
-  padding: 8px 16px;
-  padding-left: 24px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  color: #333;
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #d9534f 0%, #ff6b6b 100%);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .sectionHeader {
+    margin-bottom: 50px;
+  }
+
+  .header h2 {
+    font-size: 36px;
+    padding-bottom: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .header h2::after {
+    width: 80px;
+    height: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionHeader {
+    margin-bottom: 60px;
+  }
+
+  .header h2 {
+    font-size: 42px;
+    padding-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
+  .header h2::after {
+    width: 100px;
+    height: 6px;
+  }
 }

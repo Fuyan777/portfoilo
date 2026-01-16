@@ -1,24 +1,35 @@
 .container {
-  margin-top: 30px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .titleContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 8px;
+  padding: 16px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .image {
   position: absolute;
-  left: 16px;
+  left: 20px;
+  cursor: pointer;
 }
 
 .title {
-  margin: 0px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
+/* モバイルメニュー */
 .menu {
   display: flex;
   flex-direction: column;
@@ -38,8 +49,72 @@
   color: #d9534f;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.menuItem:hover {
+  background-color: #f8f8f8;
 }
 
 .menuItem:last-child {
   border-bottom: none;
+}
+
+/* デスクトップ対応 */
+@media (min-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .titleContainer {
+    justify-content: space-between;
+    padding: 16px 40px;
+  }
+
+  .title {
+    position: absolute;
+    left: 40px;
+  }
+
+  .menu {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 30px;
+    margin-left: auto;
+  }
+
+  .menuItem {
+    padding: 8px 0;
+    border-bottom: none;
+    font-size: 14px;
+  }
+
+  .menuItem:hover {
+    background-color: transparent;
+    color: #b33c38;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleContainer {
+    padding: 20px 60px;
+  }
+
+  .title {
+    left: 60px;
+    font-size: 24px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+
+  .menuItem {
+    font-size: 16px;
+  }
 }
