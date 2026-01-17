@@ -4,7 +4,6 @@ import nextConfig from "../../../../../next.config.mjs";
 
 const profileInfo = [
   { label: "出　身", value: "北海道出身" },
-  { label: "生年月日", value: "1998.7.13" },
   { label: "血液型", value: "O型" },
   { label: "MBTI", value: "INTJ" },
   { label: "趣　味", value: "ダンス / 歌 / K-POP" },
@@ -24,10 +23,6 @@ export default function Profile() {
             alt="alt"
             className={styles.profileImage}
           />
-          <div className={styles.titleContainer}>
-            <h1 className={styles.profileTitle}>山田 楓也</h1>
-            <h2 className={styles.profileSubtitle}>Fuya Yamada</h2>
-          </div>
           <div className={styles.info}>
             {profileInfo.map((item, index) => (
               <div className={styles.infoRow} key={index}>
