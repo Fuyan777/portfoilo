@@ -34,6 +34,21 @@ const appItems: {
   6: {
     title: "Miradance",
     src: "6_miradance",
+    link: "https://apps.apple.com/jp/app/id6757953970",
+  },
+  7: {
+    title: "Onetask",
+    src: "7_onetask",
+    link: "https://apps.apple.com/jp/app/id6758742308",
+  },
+  8: {
+    title: "Abcan",
+    src: "8_abcan",
+    link: "https://apps.apple.com/jp/app/id1587434824",
+  },
+  9: {
+    title: "Eightpost",
+    src: "9_eightpost",
     link: "",
   },
 };
