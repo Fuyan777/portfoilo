@@ -23,7 +23,7 @@ export default function NoteList() {
       <div className={styles.articleListContainer}>
         {noteArticles.map((article) => (
           <div className={styles.articleItem} key={article.title}>
-            <Link href={article.link} target="_blank">
+            <Link href={article.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={article.image}
                 alt={article.title}
