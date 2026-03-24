@@ -51,6 +51,11 @@ const appItems: {
     src: "9_eightpost",
     link: "",
   },
+  10: {
+    title: "Squat Code",
+    src: "10_squat-code",
+    link: "",
+  },
 };
 
 export default function ProductsList() {
