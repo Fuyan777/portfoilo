@@ -56,6 +56,11 @@ const appItems: {
     src: "10_squat-code",
     link: "",
   },
+  11: {
+    title: "コギケッツ",
+    src: "11_korgiketu",
+    link: "",
+  },
 };
 
 export default function ProductsList() {
