@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import ProductsList from "./components/Section/ProductsList/ProductsList";
+import ArticleList from "./components/Section/ArticleList/ArticleList";
 import YouTube from "./components/Section/YouTube/YouTube";
 import NoteList from "./components/Section/NoteList/NoteList";
 import Profile from "./components/Section/Profile/Profile";
@@ -12,6 +13,7 @@ export default function Home() {
       <div>
         <Header />
         <ProductsList />
+        <ArticleList />
         <YouTube />
         <NoteList />
         <Profile />

@@ -4,12 +4,13 @@ import styles from "./ProductsList.module.css";
 import nextConfig from "../../../../../next.config.mjs";
 
 const appItems: {
-  [key: number]: { title: string; src: string; link: string };
+  [key: number]: { title: string; src: string; link: string; slug?: string };
 } = {
   1: {
     title: "Vegitaberu",
     src: "1_vegitaberu",
     link: "https://apps.apple.com/jp/app/id6749199964",
+    slug: "vegitaberu",
   },
   2: {
     title: "Yametoku",
@@ -30,6 +31,7 @@ const appItems: {
     title: "Mirucode",
     src: "5_mirucode",
     link: "https://apps.apple.com/jp/app/id6756328501",
+    slug: "mirucode-release",
   },
   6: {
     title: "Miradance",
@@ -75,6 +77,21 @@ export default function ProductsList() {
         {cells.map((num) => {
           const app = appItems[num];
           if (app) {
+            if (app.slug) {
+              return (
+                <Link
+                  href={`/products/${app.slug}`}
+                  key={num}
+                  className={`${styles.cell} ${styles.hasApp}`}
+                >
+                  <img
+                    src={`${BASE_PATH}/${app.src}.png`}
+                    alt={app.title}
+                    className={styles.image}
+                  />
+                </Link>
+              );
+            }
             if (app.link) {
               return (
                 <Link

@@ -13,6 +13,11 @@ const profileInfo: { label: string; value: string; link?: string }[] = [
     value: "@fuyantech",
     link: "https://www.tiktok.com/@fuyantech",
   },
+  {
+    label: "Email",
+    value: "fuya0713@gmail.com",
+    link: "mailto:fuya0713@gmail.com",
+  },
 ];
 export default function Profile() {
   const BASE_PATH = nextConfig.basePath || "";
