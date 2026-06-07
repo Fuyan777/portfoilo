@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import gfm from "remark-gfm";
 import html from "remark-html";
 
 const productsDir = path.join(process.cwd(), "content/products");
@@ -47,7 +48,7 @@ export function getProductMeta(slug: string): ProductMeta {
 
 export async function getProduct(slug: string): Promise<Product> {
   const { data, content } = readMatter(slug);
-  const processed = await remark().use(html).process(content);
+  const processed = await remark().use(gfm).use(html).process(content);
   return {
     title: data.title,
     slug,
