@@ -82,6 +82,11 @@ const appItems: {
     src: "13_devdash",
     link: "",
   },
+  14: {
+    title: "Remote Rhythm",
+    src: "14_remote_ryhthm",
+    link: "https://youtu.be/OfCB2OJAEzg",
+  },
 };
 
 export default function ProductsList() {
